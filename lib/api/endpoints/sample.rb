@@ -13,8 +13,6 @@ module API
         requires :name, type: String, desc: 'name of sample'
         requires :file, type: File,
                         desc: 'audio sample, to be uploaded to s3'
-        requires :low_label, type: String, desc: 'Label for low bound'
-        requires :high_label, type: String, desc: 'Label for upper bound'
         optional :tags, type: String, desc: 'Whitespace delimited list of tags'
       end
       put authorize: [:write, ::Sample] do

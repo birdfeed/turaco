@@ -86,6 +86,8 @@ module API
                  'repeated'
         optional :replays, type: Integer, desc: 'Times a participant can play '\
                  'a sample'
+        optional :low_label, type: String, desc: 'Label for low bound'
+        optional :high_label, type: String, desc: 'Label for upper bound'
         optional :organization_id, type: Integer, desc: 'Organization ID'
         optional :sample_ids, type: Array, desc: 'Samples to associate'
         optional :tags, type: String, desc: 'Whitespace delimited tags'
